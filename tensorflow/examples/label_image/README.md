@@ -1,3 +1,24 @@
+# Modification of label_image.py for video classification
+Install opencv
+```bash
+pip install opencv-python
+```
+# Run code for video
+```bash
+python3 tensorflow/examples/label_image/label_image.py --video "tensorflow/examples/label_image/data/dog_short.mp4"
+```
+The output will be saved in data/output_video.avi.
+
+You can see the example output at data/output_video.avi ran on inception_v3.
+```
+Give --video for the input video file. Default location is data/dog_short.mp4
+Give --output_video for specifying the video output file_name. Default location is data/output_video.avi
+Give --image to run the code in image. Default location is data/grace_hopper.jpg
+Give --output_image for specifying the image output file_name. Default location is data/output_image.jpg
+```
+When neither --image and --video argument is given then it will take default video.
+
+# Original Readme file
 # TensorFlow C++ and Python Image Recognition Demo
 
 This example shows how you can load a pre-trained TensorFlow network and use it
